@@ -1,10 +1,8 @@
 # Expense Sharing Backend
 
-> A polished backend for managing shared expenses. Designed and implemented as a company-assignment-style project with clear validations, test coverage, and a focused demo.
+ 
 
----
-
-## Project summary
+## Assignment summary
 
 This repository contains a backend implementation of an Expense Sharing Application, inspired by Splitwise.
 The primary objective of this project is to demonstrate backend system design, problem decomposition, and clear architectural decision-making, rather than frontend UI development.
