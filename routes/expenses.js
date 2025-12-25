@@ -7,10 +7,10 @@ const router = express.Router();
 async function resolveUserId(identifier) {
   if (!identifier) throw new Error("Missing user identifier");
 
-  // if it's already a valid ObjectId string, return as-is
+ 
   if (mongoose.Types.ObjectId.isValid(identifier)) return identifier;
 
-  // otherwise try to find the user by name or email
+   
   const user = await User.findOne({ $or: [{ email: identifier }, { name: identifier }] });
   if (!user) throw new Error(`User not found: ${identifier}`);
   return user._id;
